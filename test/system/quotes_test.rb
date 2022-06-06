@@ -7,7 +7,7 @@ class QuotesTest < ApplicationSystemTestCase
   #   assert_selector "h1", text: "Quotes"
   # end
   setup do
-    @quote = quotes(:first) # Reference to the first fixture quote
+    @quote = Quote.ordered.first # Reference to the first fixture quote
   end
 
   test "Showing a quote" do
